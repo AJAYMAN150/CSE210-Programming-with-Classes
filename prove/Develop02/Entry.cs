@@ -6,7 +6,6 @@ public class Entry
     public string Response { get; set; }
     public string Date { get; set; }
 
-    // Constructor to initialize the entry
     public Entry(string prompt, string response, string date)
     {
         Prompt = prompt;
@@ -14,7 +13,6 @@ public class Entry
         Date = date;
     }
 
-    // Method to display the entry
     public void Display()
     {
         Console.WriteLine($"Date: {Date}");

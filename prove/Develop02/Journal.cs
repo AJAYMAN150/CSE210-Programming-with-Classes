@@ -6,13 +6,11 @@ public class Journal
 {
     private List<Entry> _entries = new List<Entry>();
 
-    // Method to add a new entry
     public void AddEntry(Entry newEntry)
     {
         _entries.Add(newEntry);
     }
 
-    // Method to display all entries
     public void DisplayEntries()
     {
         foreach (var entry in _entries)
@@ -21,7 +19,6 @@ public class Journal
         }
     }
 
-    // Method to save journal to a file
     public void SaveToFile(string filename)
     {
         using (StreamWriter outputFile = new StreamWriter(filename))
@@ -33,7 +30,6 @@ public class Journal
         }
     }
 
-    // Method to load journal from a file
     public void LoadFromFile(string filename)
     {
         string[] lines = File.ReadAllLines(filename);

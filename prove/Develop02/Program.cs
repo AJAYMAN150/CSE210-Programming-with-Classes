@@ -7,7 +7,7 @@ public class Program
         Journal journal = new Journal();
         string[] prompts = new string[]
         {
-            "Who was the most interesting person I interacted with today?",
+            "Who was the most interesting person I talked with today?",
             "What was the best part of my day?",
             "How did I see the hand of the Lord in my life today?",
             "What was the strongest emotion I felt today?",
