@@ -1,20 +1,19 @@
 class Reference
 {
-    private string _book;        // Book name (private)
-    private int _chapter;        // Chapter number (private)
-    private int _verseStart;     // Starting verse (private)
-    private int _verseEnd;       // Ending verse (private)
+    private string _book;
+    private int _chapter;
+    private int _verseStart;
+    private int _verseEnd;
 
-    // Constructor for a single verse
+    
     public Reference(string book, int chapter, int verse)
     {
         _book = book;
         _chapter = chapter;
         _verseStart = verse;
-        _verseEnd = verse; // Set verseEnd to the same value for single verses
+        _verseEnd = verse;
     }
 
-    // Constructor for a verse range
     public Reference(string book, int chapter, int verseStart, int verseEnd)
     {
         _book = book;
@@ -23,7 +22,6 @@ class Reference
         _verseEnd = verseEnd;
     }
 
-    // Override the ToString method to format the reference nicely
     public override string ToString()
     {
         if (_verseStart == _verseEnd)
